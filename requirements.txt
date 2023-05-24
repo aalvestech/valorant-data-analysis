@@ -1,0 +1,32 @@
+#Conda
+conda #== 4.3.13
+
+#PySpark
+pyspark == 3.4.0
+
+#Env
+python-dotenv == 1.0.0
+
+#Analysis
+pandas == 2.0.0
+
+#DataViz
+seaborn == 0.12.1
+matplotlib == 3.6.2
+plotly-express == 0.4.1
+
+#Aws
+boto3 == 1.26.128
+
+#ParquetFile
+pyarrow == 9.0.0
+
+#Machine Learning
+scikit-learn == 1.1.3
+
+#JobLib
+joblib == 1.2.0
+
+#Jupyter
+ipykernel == 6.23.0
+jupyter == 1.0.0
