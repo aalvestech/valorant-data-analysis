@@ -1,0 +1,22 @@
+version: "3"
+
+networks:
+    rede: 
+        driver: bridge
+
+services:
+ 
+  pyspark:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    container_name: container_pyspark_image
+    mem_limit: 8g
+    cpus: 4
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+    volumes:
+      - ./:/home/jovyan/repos/valorant-data-analysis
+    networks:
+      - rede
