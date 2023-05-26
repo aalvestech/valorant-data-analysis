@@ -11,8 +11,15 @@ services:
       context: .
       dockerfile: ./docker/Dockerfile
     container_name: container_pyspark_image
-    mem_limit: 8g
-    cpus: 4
+    deploy:
+      resources:
+        limits:
+          memory: 10g
+          cpus: '4'
+        reservations:
+          memory: 5g
+          cpus: '4'
+
     ports:
       - "8888:8888"
       - "4040:4040"
